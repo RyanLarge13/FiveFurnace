@@ -11,7 +11,7 @@
 <body>
     <main>
         <h1>Calculate Furnace Temp</h1>
-        <form action="">
+        <form action="" autocomplete="off">
             <label for="target">Target Techtime</label>
             <input type="text" id="target">
             <label for="tech-time">Tech Time</label>
@@ -20,7 +20,10 @@
             <input type="text" id="current-temp">
             <label for="future-temp">Future Temp</label>
             <input type="text" id="future-temp">
-            <button type="submit">Submit</button>
+            <div class="btns">
+                <button class="submit" type="submit">Submit</button>
+                <button class="clear" type="button">Clear</button>
+            </div>
         </form>
         <div class="output">
             <p></p>

@@ -46,7 +46,7 @@ input {
     font-weight: 600;
 }
 
-button {
+.submit {
     font-size: .75em;
     padding: .5em 1em;
     margin-top: 4em;
@@ -56,14 +56,35 @@ button {
     font-weight: 600;
 }
 
-button:hover {
+.btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10em;
+}
+
+.submit:hover {
+    cursor: pointer;
+}
+
+.clear {
+    background-color: rgb(0, 99, 248);
+    font-size: .75em;
+    padding: .5em 1em;
+    margin-top: 4em;
+    border-radius: .5em;
+    border: none;
+    font-weight: 600;
+}
+
+.clear:hover {
     cursor: pointer;
 }
 
 .output {
     margin-top: 4em;
     position: absolute;
-    bottom: 5%;
+    bottom: 5vh;
 }
 
 .output p {

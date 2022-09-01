@@ -5,6 +5,7 @@ const currentTemp = document.getElementById('current-temp');
 const futureTemp = document.getElementById('future-temp');
 const submit = document.querySelector('form button');
 const output = document.querySelector('.output p');
+const clear = document.querySelector('.clear');
 const hearthCount = 4;
 
 //need to convert times to seconds it is always the target techtime from your last tech time
@@ -70,3 +71,7 @@ const displayResult = (result) => {
 };
 
 form.addEventListener('submit', calc);
+clear.addEventListener('click', () => {
+    form.reset();
+    output.innerHTML = '';
+});
